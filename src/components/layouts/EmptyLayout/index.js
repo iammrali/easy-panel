@@ -2,7 +2,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { useEmptyLayoutStyles } from "../../styles";
+import { useEmptyLayoutStyles } from "../../../styles";
 
 export default function EmptyLayout() {
   const classes = useEmptyLayoutStyles();
