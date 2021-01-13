@@ -1,33 +1,14 @@
-import { makeStyles } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import FingerprintIcon from "@material-ui/icons/Fingerprint";
 import PersonAddDisabledIcon from "@material-ui/icons/PersonAddDisabled";
 import PropTypes from "prop-types";
 import React from "react";
-
-const useStyles = makeStyles({
-  noUser: {
-    display: "flex",
-    placeContent: "center",
-    alignItems: "center",
-    minHeight: 64,
-  },
-  avatar: {
-    cursor: "pointer",
-    width: 45,
-    height: 45,
-  },
-  username: {
-    textTransform: "uppercase",
-    marginTop: 10,
-  },
-  desc: {},
-});
+import { useUserProfileStyles } from "../../styles";
 
 const UserProfile = ({ user, children }) => {
-  const classes = useStyles();
-  
+  const classes = useUserProfileStyles();
+
   if (!user)
     return (
       <Box className={classes.noUser}>
@@ -42,11 +23,10 @@ const UserProfile = ({ user, children }) => {
         {user.userName}
       </Typography>
       <Typography
-        className={classes.desc}
         color="textSecondary"
         variant="body2"
       >
-        {user.desc}
+        {user.title}
       </Typography>
 
       {children}

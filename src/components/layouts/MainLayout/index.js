@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { useLayoutStyles } from "../../../styles";
-import NavBar from "./NavBar/index";
+import NavBar from "./NavBar";
 import TopBar from "./TopBar";
 
 export default function MainLayout() {

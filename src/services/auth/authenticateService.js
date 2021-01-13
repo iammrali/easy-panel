@@ -9,7 +9,7 @@ export const logout = () => {
 };
 
 export const getCurrentUser = () => {
-  return { username: "ali", title: "developer" };
+  return { userName: "Ali", title: "Developer" };
 };
 
 const auth = {

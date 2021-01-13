@@ -78,6 +78,23 @@ export const useNavItemStyles = makeStyles((theme) => ({
   },
 }));
 
+export const useUserProfileStyles = makeStyles({
+  noUser: {
+    display: "flex",
+    placeContent: "center",
+    alignItems: "center",
+    minHeight: 64,
+  },
+  avatar: {
+    cursor: "pointer",
+    width: 45,
+    height: 45,
+  },
+  username: {
+    textTransform: "uppercase",
+    marginTop: 10,
+  },
+});
 
 export const usePageStyles = makeStyles((theme) => ({
   page: {
