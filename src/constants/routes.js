@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import EmptyLayout from "../components/layouts/EmptyLayout";
 import MainLayout from "../components/layouts/MainLayout";
-import DashboardView from "../views/DashboardView";
+import DashboardView from "../views/dashboard/DashboardView";
 
 export const LOGIN_URL = "/app/login";
 
