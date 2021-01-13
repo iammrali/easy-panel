@@ -77,3 +77,18 @@ export const useNavItemStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+
+export const usePageStyles = makeStyles((theme) => ({
+  page: {
+    maxHeight: 1,
+    minHeight: "calc(100vh - 64px)",
+    overflow: "auto",
+    [theme.breakpoints.only("xs")]: {
+      padding: theme.spacing(1),
+    },
+    [theme.breakpoints.between("sm", "lg")]: {
+      padding: theme.spacing(3),
+    },
+  },
+}));
