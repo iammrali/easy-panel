@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'YekanWeb';
+    src: url('../assets/fonts/YekanWeb-Regular.eot');
+    src: url('../assets/fonts/YekanWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/YekanWeb-Regular.woff') format('woff'),
+    url('../assets/fonts/YekanWeb-Regular.ttf') format('truetype'),
+    url('../assets/fonts/YekanWeb-Regular.svg#YekanWeb-Regular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    word-spacing: 3px;
+}

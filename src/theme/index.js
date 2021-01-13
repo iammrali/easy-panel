@@ -3,6 +3,7 @@ import { faIR } from "@material-ui/core/locale";
 import { createMuiTheme, jssPreset } from "@material-ui/core/styles";
 import { create } from "jss";
 import rtl from "jss-rtl";
+import "./webyekan.css";
 
 export const theme = createMuiTheme(
   {
@@ -17,6 +18,7 @@ export const theme = createMuiTheme(
       },
     },
     typography: {
+      fontFamily: "YekanWeb !important",
       h5: {
         fontSize: "1.2rem",
       },
@@ -24,6 +26,7 @@ export const theme = createMuiTheme(
     overrides: {
       MuiCssBaseline: {
         "@global": {
+          "@font-face": "YekanWeb !important",
           ".custom-scrollbar::-webkit-scrollbar": {
             width: 11,
           },
