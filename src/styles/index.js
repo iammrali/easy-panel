@@ -109,3 +109,32 @@ export const usePageStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+export const useLoginStyles = makeStyles((theme) => ({
+  paper: {
+    [theme.breakpoints.only("xs")]: {
+      margin: theme.spacing(0, 4),
+    },
+    [theme.breakpoints.up("sm")]: {
+      margin: theme.spacing(0, 8),
+    },
+    display: "grid",
+    placeItems: "center",
+    placeContent: "center",
+    height: "100vh",
+  },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: "100%",
+    marginTop: theme.spacing(1),
+  },
+  rememberMe: {
+    marginTop: theme.spacing(3),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
