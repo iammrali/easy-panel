@@ -1,7 +1,7 @@
 import http from "../httpService";
 
 export const login = async (user) => {
-  await http.post("", user);
+  //await http.post("", user);
 };
 
 export const logout = () => {
