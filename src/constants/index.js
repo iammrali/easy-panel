@@ -9,7 +9,10 @@ const messageResource = {
   menu: "منو",
   notifications: "اعلانات",
   ok: "خب",
+  password: "رمز عبور",
   rememberMe: "مرا به خاطر بسپار",
+  submit: "ارسال",
+  username: "نام کاربری",
 };
 
 export default messageResource;

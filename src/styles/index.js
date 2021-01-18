@@ -78,38 +78,6 @@ export const useNavItemStyles = makeStyles((theme) => ({
   },
 }));
 
-export const useUserProfileStyles = makeStyles({
-  noUser: {
-    display: "flex",
-    placeContent: "center",
-    alignItems: "center",
-    minHeight: 64,
-  },
-  avatar: {
-    cursor: "pointer",
-    width: 45,
-    height: 45,
-  },
-  username: {
-    textTransform: "uppercase",
-    marginTop: 10,
-  },
-});
-
-export const usePageStyles = makeStyles((theme) => ({
-  page: {
-    maxHeight: 1,
-    minHeight: "calc(100vh - 64px)",
-    overflow: "auto",
-    [theme.breakpoints.only("xs")]: {
-      padding: theme.spacing(1),
-    },
-    [theme.breakpoints.between("sm", "lg")]: {
-      padding: theme.spacing(3),
-    },
-  },
-}));
-
 export const useLoginStyles = makeStyles((theme) => ({
   paper: {
     [theme.breakpoints.only("xs")]: {
