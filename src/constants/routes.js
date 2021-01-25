@@ -3,6 +3,7 @@ import EmptyLayout from "../components/layouts/EmptyLayout";
 import MainLayout from "../components/layouts/MainLayout";
 import LoginView from "../views/account/LoginView";
 import DashboardView from "../views/dashboard/DashboardView";
+import TableView from "../views/TableView";
 
 export const LOGIN_URL = "/app/login";
 
@@ -11,6 +12,7 @@ const ROUTES = [
     path: "/",
     element: <MainLayout />,
     children: [
+      { path: "/table", element: <TableView /> },
       { path: "/dashboard", element: <DashboardView /> },
       { path: "/", element: <Navigate to="/dashboard" /> },
       { path: "*", element: <Navigate to="/app/404" /> },

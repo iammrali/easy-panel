@@ -12,6 +12,7 @@ const messageResource = {
   password: "رمز عبور",
   rememberMe: "مرا به خاطر بسپار",
   submit: "ارسال",
+  table: "جدول",
   username: "نام کاربری",
 };
 
